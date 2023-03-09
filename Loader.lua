@@ -169,6 +169,3 @@ end
 wait(3)
 
 Library()
-AddFrame()
-addTitle("Text")
-addSectionButtons("TExt")
