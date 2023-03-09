@@ -224,9 +224,3 @@ function Library()
 	end
 end
 wait(3)
-
-Library()
-AddFrame()
-addTitle("Text")
-addSectionButtons("Section Button")
-addButtons("Text")
