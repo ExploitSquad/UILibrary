@@ -163,9 +163,70 @@ function Library()
                     TextButton.Visible = false
                 end)
 			end
+			function addButtons(text3)
+
+				local SectionFrame = Instance.new("ScrollingFrame")
+				local UIListLayout = Instance.new("UIListLayout")
+				local SectionButton = Instance.new("TextLabel")
+				local SectionOriginalButton = Instance.new("TextButton")
+				SectionFrame.Name = "SectionFrame"
+				SectionFrame.Parent = ContainerFrame
+				SectionFrame.Active = true
+				SectionFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+				SectionFrame.BorderSizePixel = 0
+				SectionFrame.Position = UDim2.new(0.0203389823, 0, 0.149367094, 0)
+				SectionFrame.Size = UDim2.new(0, 283, 0, 330)
+
+				UIListLayout.Parent = SectionFrame
+				UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+				UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+				SectionButton.Name = "SectionButton"
+				SectionButton.Parent = SectionFrame
+				SectionButton.BackgroundColor3 = Color3.new(1, 1, 1)
+				SectionButton.BackgroundTransparency = 1
+				SectionButton.TextTransparency = 0.3
+				SectionButton.Size = UDim2.new(0, 283, 0, 22)
+				SectionButton.Font = Enum.Font.SourceSans
+				SectionButton.Text = text3
+				SectionButton.TextColor3 = Color3.new(1, 1, 1)
+				SectionButton.TextSize = 14
+
+				SectionOriginalButton.Name = "SectionOriginalButton"
+				SectionOriginalButton.Parent = SectionButton
+				SectionOriginalButton.BackgroundColor3 = Color3.new(1, 1, 1)
+				SectionOriginalButton.BackgroundTransparency = 1
+				SectionOriginalButton.Size = UDim2.new(0, 283, 0, 22)
+				SectionOriginalButton.Font = Enum.Font.SourceSans
+				SectionOriginalButton.Text = ""
+				SectionOriginalButton.TextColor3 = Color3.new(1, 1, 1)
+				SectionOriginalButton.TextSize = 14
+				SectionButton.MouseEnter:Connect(function()
+					SectionButton.TextTransparency = 0.3
+					wait(.1)
+					SectionButton.TextTransparency = 0.4
+					wait(.1)
+					SectionButton.TextTransparency = 0.5
+					wait(.1)
+					SectionButton.TextTransparency = 0.6
+				end)
+				SectionButton.MouseLeave:Connect(function()
+					SectionButton.TextTransparency = 0.3
+					wait(.1)
+					SectionButton.TextTransparency = 0.4
+					wait(.1)
+					SectionButton.TextTransparency = 0.5
+					wait(.1)
+					SectionButton.TextTransparency = 0.6
+				end)
+			end
 		end
 	end
 end
 wait(3)
 
 Library()
+AddFrame()
+addTitle("Text")
+addSectionButtons("Section Button")
+addButtons("Text")
