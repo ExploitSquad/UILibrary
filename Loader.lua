@@ -95,7 +95,7 @@ function Library()
 				dragify(script.Parent)
 			end
 			coroutine.wrap(RAJXIR_fake_script)()
-			function addSectionButtons(text2)
+			function addSectionButtons(text2,text3)
 				local SectionButton = Instance.new("TextLabel")
 				local TitleFrame_Under = Instance.new("Frame")
 				local TextButton = Instance.new("TextButton")
@@ -124,7 +124,7 @@ function Library()
 				TextButton.Size = UDim2.new(0, 100, 0, 25)
 				TextButton.Visible = false
 				TextButton.Font = Enum.Font.SourceSans
-				TextButton.Text = ""
+				TextButton.Text = text3
 				TextButton.TextColor3 = Color3.new(0, 0, 0)
 				TextButton.TextSize = 14
 
@@ -166,8 +166,4 @@ function Library()
 		end
 	end
 end
-Library()
-AddFrame()
-addTitle("Text")
-addSectionButtons("Text2")
 wait(3)
