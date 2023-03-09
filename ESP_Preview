@@ -1,0 +1,312 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local GuiEsp_Preview = Instance.new("ScreenGui")
+local ESP_Preview = Instance.new("Frame")
+local ContainerFrame = Instance.new("Frame")
+local ContainerFrame2 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Username = Instance.new("TextLabel")
+local ESP_Preview_Frame = Instance.new("Frame")
+local Head = Instance.new("Frame")
+local BoneHead = Instance.new("Frame")
+local Torso = Instance.new("Frame")
+local BoneLeftArm = Instance.new("Frame")
+local BoneRightArm = Instance.new("Frame")
+local BoneLeftLeg = Instance.new("Frame")
+local RightArm = Instance.new("Frame")
+local BoneRightArm2 = Instance.new("Frame")
+local LeftArm = Instance.new("Frame")
+local BoneLefttArm2 = Instance.new("Frame")
+local RightLeg = Instance.new("Frame")
+local BoneLeftLeg_2 = Instance.new("Frame")
+local LeftLeg = Instance.new("Frame")
+local BoneLeftLeg_3 = Instance.new("Frame")
+local BoneLeftLeg2 = Instance.new("Frame")
+local ESP_Title = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+
+-- Properties
+
+GuiEsp_Preview.Name = "GuiEsp_Preview"
+GuiEsp_Preview.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GuiEsp_Preview.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ESP_Preview.Archivable = false
+ESP_Preview.Name = "ESP_Preview"
+ESP_Preview.Parent = GuiEsp_Preview
+ESP_Preview.AnchorPoint = Vector2.new(0.5, 0.5)
+ESP_Preview.BackgroundColor3 = Color3.new(1, 1, 1)
+ESP_Preview.BorderColor3 = Color3.new(0.0352941, 0.0352941, 0.0352941)
+ESP_Preview.ClipsDescendants = true
+ESP_Preview.Position = UDim2.new(0.7218045, 0, 0.360655755, 0)
+ESP_Preview.Size = UDim2.new(0, 186, 0, 263)
+
+ContainerFrame.Name = "ContainerFrame"
+ContainerFrame.Parent = ESP_Preview
+ContainerFrame.BackgroundColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+ContainerFrame.BorderColor3 = Color3.new(0.0470588, 1, 0.572549)
+ContainerFrame.ClipsDescendants = true
+ContainerFrame.Position = UDim2.new(0.134408608, 0, 0.00460119732, 0)
+ContainerFrame.Size = UDim2.new(0, 184, 0, 260)
+
+ContainerFrame2.Name = "ContainerFrame2"
+ContainerFrame2.Parent = ContainerFrame
+ContainerFrame2.BackgroundColor3 = Color3.new(0, 0, 0)
+ContainerFrame2.BorderSizePixel = 0
+ContainerFrame2.Position = UDim2.new(0.0434782617, 0, 0.0987692028, 0)
+ContainerFrame2.Size = UDim2.new(0, 169, 0, 226)
+
+UICorner.Parent = ContainerFrame2
+UICorner.CornerRadius = UDim.new(0, 2)
+
+Username.Name = "Username"
+Username.Parent = ContainerFrame2
+Username.BackgroundColor3 = Color3.new(1, 1, 1)
+Username.BackgroundTransparency = 1
+Username.Position = UDim2.new(-0.00373036764, 0, 0.030156564, 0)
+Username.Size = UDim2.new(0, 169, 0, 16)
+Username.Font = Enum.Font.Code
+Username.Text = "ESP - Preview"
+Username.TextColor3 = Color3.new(1, 1, 1)
+Username.TextSize = 12
+
+ESP_Preview_Frame.Name = "ESP_Preview_Frame"
+ESP_Preview_Frame.Parent = ContainerFrame2
+ESP_Preview_Frame.BackgroundColor3 = Color3.new(0.0784314, 0.192157, 0)
+ESP_Preview_Frame.BackgroundTransparency = 0.44999998807907104
+ESP_Preview_Frame.Position = UDim2.new(0.106508873, 0, 0.14159292, 0)
+ESP_Preview_Frame.Size = UDim2.new(0, 130, 0, 181)
+ESP_Preview_Frame.Visible = false
+
+Head.Name = "Head"
+Head.Parent = ESP_Preview_Frame
+Head.BackgroundColor3 = Color3.new(0.14902, 1, 0)
+Head.BackgroundTransparency = 0.800000011920929
+Head.BorderSizePixel = 0
+Head.Position = UDim2.new(0.330769241, 0, 0.105009466, 0)
+Head.Size = UDim2.new(0, 43, 0, 26)
+
+BoneHead.Name = "BoneHead"
+BoneHead.Parent = Head
+BoneHead.BackgroundColor3 = Color3.new(0.133333, 1, 0)
+BoneHead.BackgroundTransparency = 0.550000011920929
+BoneHead.Position = UDim2.new(0.534883738, 0, 0.615384638, 0)
+BoneHead.Size = UDim2.new(0, 1, 0, 76)
+
+Torso.Name = "Torso"
+Torso.Parent = ESP_Preview_Frame
+Torso.BackgroundColor3 = Color3.new(0.14902, 1, 0)
+Torso.BackgroundTransparency = 0.800000011920929
+Torso.BorderSizePixel = 0
+Torso.Position = UDim2.new(0.27692309, 0, 0.248322129, 0)
+Torso.Size = UDim2.new(0, 59, 0, 57)
+
+BoneLeftArm.Name = "BoneLeftArm"
+BoneLeftArm.Parent = Torso
+BoneLeftArm.BackgroundColor3 = Color3.new(0, 1, 0.164706)
+BoneLeftArm.BackgroundTransparency = 0.550000011920929
+BoneLeftArm.BorderSizePixel = 0
+BoneLeftArm.Position = UDim2.new(-0.26644069, 0, 0.157894731, 0)
+BoneLeftArm.Size = UDim2.new(0, 45, 0, 1)
+
+BoneRightArm.Name = "BoneRightArm"
+BoneRightArm.Parent = Torso
+BoneRightArm.BackgroundColor3 = Color3.new(0, 1, 0.164706)
+BoneRightArm.BackgroundTransparency = 0.550000011920929
+BoneRightArm.BorderSizePixel = 0
+BoneRightArm.Position = UDim2.new(0.496271163, 0, 0.157894731, 0)
+BoneRightArm.Size = UDim2.new(0, 47, 0, 1)
+
+BoneLeftLeg.Name = "BoneLeftLeg"
+BoneLeftLeg.Parent = Torso
+BoneLeftLeg.BackgroundColor3 = Color3.new(0, 1, 0.164706)
+BoneLeftLeg.BackgroundTransparency = 0.550000011920929
+BoneLeftLeg.BorderSizePixel = 0
+BoneLeftLeg.Position = UDim2.new(0.118644066, 0, 1.12280703, 0)
+BoneLeftLeg.Size = UDim2.new(0, 24, 0, 2)
+
+RightArm.Name = "RightArm"
+RightArm.Parent = ESP_Preview_Frame
+RightArm.BackgroundColor3 = Color3.new(0.14902, 1, 0)
+RightArm.BackgroundTransparency = 0.800000011920929
+RightArm.BorderSizePixel = 0
+RightArm.Position = UDim2.new(0.730769217, 0, 0.248322144, 0)
+RightArm.Size = UDim2.new(0, 26, 0, 57)
+
+BoneRightArm2.Name = "BoneRightArm2"
+BoneRightArm2.Parent = RightArm
+BoneRightArm2.BackgroundColor3 = Color3.new(0, 1, 0.164706)
+BoneRightArm2.BackgroundTransparency = 0.550000011920929
+BoneRightArm2.BorderSizePixel = 0
+BoneRightArm2.Position = UDim2.new(0.587693453, 2, 0.157894731, 0)
+BoneRightArm2.Size = UDim2.new(0, 2, 0, 35)
+
+LeftArm.Name = "LeftArm"
+LeftArm.Parent = ESP_Preview_Frame
+LeftArm.BackgroundColor3 = Color3.new(0.14902, 1, 0)
+LeftArm.BackgroundTransparency = 0.800000011920929
+LeftArm.BorderSizePixel = 0
+LeftArm.Position = UDim2.new(0.0769230723, 0, 0.248322129, 0)
+LeftArm.Size = UDim2.new(0, 26, 0, 57)
+
+BoneLefttArm2.Name = "BoneLefttArm2"
+BoneLefttArm2.Parent = LeftArm
+BoneLefttArm2.BackgroundColor3 = Color3.new(0, 1, 0.164706)
+BoneLefttArm2.BackgroundTransparency = 0.550000011920929
+BoneLefttArm2.BorderSizePixel = 0
+BoneLefttArm2.Position = UDim2.new(0.318461478, 2, 0.157894731, 0)
+BoneLefttArm2.Size = UDim2.new(0, 1, 0, 35)
+
+RightLeg.Name = "RightLeg"
+RightLeg.Parent = ESP_Preview_Frame
+RightLeg.BackgroundColor3 = Color3.new(0.14902, 1, 0)
+RightLeg.BackgroundTransparency = 0.800000011920929
+RightLeg.BorderSizePixel = 0
+RightLeg.Position = UDim2.new(0.27692309, 0, 0.559049308, 0)
+RightLeg.Size = UDim2.new(0, 26, 0, 57)
+
+BoneLeftLeg_2.Name = "BoneLeftLeg"
+BoneLeftLeg_2.Parent = RightLeg
+BoneLeftLeg_2.BackgroundColor3 = Color3.new(0, 1, 0.164706)
+BoneLeftLeg_2.BackgroundTransparency = 0.550000011920929
+BoneLeftLeg_2.BorderSizePixel = 0
+BoneLeftLeg_2.Position = UDim2.new(1.15700006, 0, 0.139999926, 0)
+BoneLeftLeg_2.Size = UDim2.new(0, 19, 0, 2)
+
+LeftLeg.Name = "LeftLeg"
+LeftLeg.Parent = ESP_Preview_Frame
+LeftLeg.BackgroundColor3 = Color3.new(0.14902, 1, 0)
+LeftLeg.BackgroundTransparency = 0.800000011920929
+LeftLeg.BorderSizePixel = 0
+LeftLeg.Position = UDim2.new(0.476923078, 0, 0.559049308, 0)
+LeftLeg.Size = UDim2.new(0, 33, 0, 57)
+
+BoneLeftLeg_3.Name = "BoneLeftLeg"
+BoneLeftLeg_3.Parent = LeftLeg
+BoneLeftLeg_3.BackgroundColor3 = Color3.new(0, 1, 0.164706)
+BoneLeftLeg_3.BackgroundTransparency = 0.550000011920929
+BoneLeftLeg_3.BorderSizePixel = 0
+BoneLeftLeg_3.Position = UDim2.new(-0.637249589, 2, 0.136111885, 0)
+BoneLeftLeg_3.Size = UDim2.new(0, 1, 0, 34)
+
+BoneLeftLeg2.Name = "BoneLeftLeg2"
+BoneLeftLeg2.Parent = LeftLeg
+BoneLeftLeg2.BackgroundColor3 = Color3.new(0, 1, 0.164706)
+BoneLeftLeg2.BackgroundTransparency = 0.550000011920929
+BoneLeftLeg2.BorderSizePixel = 0
+BoneLeftLeg2.Position = UDim2.new(0.665780663, 2, 0.136111885, 0)
+BoneLeftLeg2.Size = UDim2.new(0, 1, 0, 34)
+
+ESP_Title.Name = "ESP_Title"
+ESP_Title.Parent = ContainerFrame
+ESP_Title.BackgroundColor3 = Color3.new(1, 1, 1)
+ESP_Title.BackgroundTransparency = 1
+ESP_Title.Position = UDim2.new(0.00543478271, 0, -0.0076923077, 0)
+ESP_Title.Size = UDim2.new(0, 184, 0, 16)
+ESP_Title.Font = Enum.Font.Code
+ESP_Title.Text = "ESP - Preview"
+ESP_Title.TextColor3 = Color3.new(1, 1, 1)
+ESP_Title.TextSize = 12
+ESP_Title.TextXAlignment = Enum.TextXAlignment.Left
+
+UIListLayout.Parent = ESP_Preview
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+-- Scripts
+
+local function HVTNF_fake_script() -- ESP_Preview.Dragify 
+	local script = Instance.new('LocalScript', ESP_Preview)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(HVTNF_fake_script)()
+local function CUTGJV_fake_script() -- ESP_Preview.Dragify 
+	local script = Instance.new('LocalScript', ESP_Preview)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(CUTGJV_fake_script)()
